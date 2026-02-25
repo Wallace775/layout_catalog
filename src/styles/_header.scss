@@ -1,0 +1,57 @@
+.header {
+  padding: $spacing-lg $catalog-padding-horizontal;
+  background-color: $color-white;
+  border-bottom: $card-border-width solid $color-border;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+
+    img {
+      height: 40px;
+      width: auto;
+    }
+
+    span {
+      font-size: $font-size-title;
+      font-weight: 700;
+      color: $color-text;
+    }
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: $spacing-xl;
+    }
+
+    a {
+      color: $color-nav-link;
+      text-decoration: none;
+      font-size: $font-size-nav;
+      font-weight: 500;
+      transition: color $transition-speed $transition-timing;
+
+      &:hover {
+        color: $color-nav-hover;
+      }
+
+      &.is-active {
+        color: $color-nav-hover;
+        font-weight: 700;
+      }
+    }
+  }
+}

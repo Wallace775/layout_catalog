@@ -1,3 +1,45 @@
-body {
+@import './variables';
+@import './header';
+@import './stars';
+@import './card';
+
+// Import Google Font
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap';
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+// Catalog container with grid layout
+.catalog {
+  padding: $catalog-padding-vertical $catalog-padding-horizontal;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, $card-width);
+    gap: $card-gap-vertical $card-gap-horizontal;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, $card-width);
+    }
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(3, $card-width);
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(4, $card-width);
+    }
+  }
 }
