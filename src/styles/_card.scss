@@ -8,14 +8,6 @@
   box-sizing: border-box;
   transition: transform $transition-speed $transition-timing;
 
-  &:hover {
-    transform: scale(1.2);
-
-    .card__title {
-      color: $color-card-title-hover;
-    }
-  }
-
   &__image {
     width: 100%;
     height: $card-image-height;
@@ -97,6 +89,14 @@
       &:hover {
         background-color: $color-bg-hover;
       }
+    }
+  }
+
+  &:hover {
+    transform: scale(1.2);
+
+    .card__title {
+      color: $color-card-title-hover;
     }
   }
 }

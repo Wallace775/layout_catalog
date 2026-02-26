@@ -28,9 +28,6 @@
     color: $color-text;
   }
 
-  &__nav {
-  }
-
   &__nav-list {
     display: flex;
     list-style: none;
@@ -50,7 +47,7 @@
       color: $color-nav-hover;
     }
 
-    &--active {
+    &.is-active {
       color: $color-nav-hover;
       font-weight: 700;
     }
