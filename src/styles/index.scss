@@ -7,26 +7,30 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap';
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: $font-family;
-  background-color: $color-bg;
   color: $color-text;
+  background-color: $color-bg;
 }
 
 // Catalog container with grid layout
 .catalog {
-  padding: $catalog-padding-vertical $catalog-padding-horizontal;
+  box-sizing: border-box;
+  padding: $catalog-padding-vertical $catalog-padding-horizontal 80px;
 
   &__container {
     display: grid;
     grid-template-columns: repeat(1, $card-width);
+
+    box-sizing: border-box;
     gap: $card-gap-vertical $card-gap-horizontal;
     justify-content: center;
+
     max-width: 1200px;
     margin: 0 auto;
 
