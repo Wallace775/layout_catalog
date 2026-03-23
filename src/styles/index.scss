@@ -21,14 +21,14 @@ body {
 // Catalog container with grid layout
 .catalog {
   box-sizing: border-box;
-  padding: $catalog-padding-vertical $catalog-padding-horizontal 80px;
+  padding: $catalog-padding-vertical $catalog-padding-horizontal;
 
   &__container {
     display: grid;
     grid-template-columns: repeat(1, $card-width);
 
-    box-sizing: border-box;
     gap: $card-gap-vertical $card-gap-horizontal;
+    box-sizing: border-box;
     justify-content: center;
 
     max-width: 1200px;
