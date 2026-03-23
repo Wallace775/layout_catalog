@@ -1,6 +1,7 @@
 {
   "name": "catalog-page",
   "version": "1.0.0",
+  "homepage": "https://wallace775.github.io/layout_catalog/",
   "description": "Frontend practice with catalog page",
   "scripts": {
     "init": "mate-scripts init",
